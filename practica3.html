@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practica</title>
+</head>
+<body>
+<script>
+
+
+	let precio = parseFloat(prompt("Ingrese el precio: "));
+	let num = parseInt(prompt("Ingrese un numero entre 1 y 5: "));
+	let descuento;
+	let precio_final;
+
+
+	switch(num){
+		case 1:
+			descuento = 0.50;
+		break;
+
+		case 2:
+			descuento = 0.40;
+		break;
+
+		case 3:
+			descuento = 0.30;
+		break;
+
+		case 4:
+			descuento = 0.20;
+		break;
+
+		case 5:
+			descuento = 0.10;
+		break;
+		default: 
+			document.write("No valido");
+	}
+
+	precio_final = precio - (precio * descuento);
+
+	document.write("El precio a pagar sera $: " + precio_final);
+
+</script>
+</body>
+</html>
